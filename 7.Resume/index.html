@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <h1 id="username" >wangzhe</h1>
+                <h4 id="persona-tag" >Java / Hadoop /Python / 爬虫 / 信息检索</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">王宝童</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">硕士研究生</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">华中科技大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2018</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">18627793372</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">wangzhe920417@gmail.com</span></li>
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">www.wangzhe.tech</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">github.com/wangzhe0417</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Java</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">信息检索</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Hadoop</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Nutch</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Python</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">专业</label><span class="label-value">Java、Hadoop、信息检索、Nutch、Lucene、Solr</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">兴趣</label><span class="label-value">Python、MySQL、JavaScript、HTML/CSS</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">其它</label><span class="label-value">Git、SVN、Maven、PS、Markdown</span></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>华中科技大学 - 软件工程专业（硕士）2015-2018</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>TCG 实验室</h3>
+                        <p>华中科技大学 TCG 实验室从事信息检索和搜索引擎方向的研究学习。
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>Nutch + Lucene 实现的商用搜索引擎</h3>
+                        <p>在 Nutch 的基础上对 Nutch 的两个主要瓶颈进行修改，增加 DNS 缓存模块，对主机 IP 进行缓存；增加 NIOFetch 模块，实现对网页的异步抓取。同时增加robots.txt缓存模块，对主机的robots.txt进行缓存。
+                             <br/>
+                        在 Lucene 的基础上重写了 Lucene 索引结构，使之能够实现百万级数据亚秒级响应，使之可以达到商用要求。
+                        	<br/>
+                        在项目中主要负责 Nutch 爬虫模块的优化，即上述的 DNS 缓存模块、robots.txt 缓存模块和 NIOFetcher 模块。
+                        </p>
+                    </li>
+                    <br/>
+                    <li>
+                        <h3>Python + 高德 API 解决租房问题</h3>
+                        <p>
+                            在深圳实习找房子怕被坑，使用 Python 爬虫爬去租房网站的房源信息，利用高德的 js API 在地图上标出房源地点，划出距离工作地点1小时内可到达的范围，并附上公交路径规划功能查看不同路径的用时。
+                        </p>
+                    </li>
+                    <br/>
+                    <li>
+                        <h3>Python + flask 框架 实现类 Instagram 图片分享社交</h3>
+                        <p>
+                            使用 python 的 flask 框架加 Flask-SQLAlchemy 数据库交互扩展，Flask-upload扩展以及七牛云存储来实现。
+                        </p>
+                    </li>
+                    <br/>
+                    <li>
+                        <h3>使用 Java + Python 实现仿知乎问答网站</h3>
+                        <p>
+                            功能与知乎相同，使用 Spring，iBatis 集成数据库交互，redis 实现点赞功能，并拥有全文搜索功能。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                	<li>
+                        <h3>在校期间多次获得二等奖学金</h3>
+                         <p>
+                            本科阶段在校期间认真学习，多次获得二等奖学金。
+                        </p>
+                    </li> 
+                    <br/>
+                    <li>
+                        <h3>2013 ~ 2014 学年校优秀学生干部</h3>
+                        <p>
+                            本科阶段在校学生会担任组织部部长，班级担任生活委员并荣获校优秀学生干部称号。
+                        </p>
+                    </li> 
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+                    我是一个对新技术充满兴趣，对开发由衷热爱，拥有Geek精神且善于发现问题。
+                    <br/>
+                    目前正在寻找信息检索，大数据及Java工程师方向的工作，希望借此机会为贵司献上我的一点绵薄之力，并提升自己。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
