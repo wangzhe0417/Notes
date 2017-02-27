@@ -69,7 +69,8 @@ java堆是所有线程所共享的一块内存，在虚拟机启动时创建，�
 
 ### java内存模型
 java内存模型(JMM)是线程间通信的控制机制.JMM定义了主内存和线程之间抽象关系。线程之间的共享变量存储在主内存（main memory）中，每个线程都有一个私有的本地内存（local memory），本地内存中存储了该线程以读/写共享变量的副本。本地内存是JMM的一个抽象概念，并不真实存在。它涵盖了缓存，写缓冲区，寄存器以及其他的硬件和编译器优化。Java内存模型的抽象示意图如下：
->![](http://cdn2.infoqstatic.com/statics_s1_20151006-0049u2/resource/articles/java-memory-model-1/zh/resources/11.png)
+>JMM内存模型图
+![](http://cdn2.infoqstatic.com/statics_s1_20151006-0049u2/resource/articles/java-memory-model-1/zh/resources/11.png)
 从上图来看，线程A与线程B之间如要通信的话，必须要经历下面2个步骤：
 1. 首先，线程A把本地内存A中更新过的共享变量刷新到主内存中去。
 2. 然后，线程B到主内存中去读取线程A之前已更新过的共享变量。
