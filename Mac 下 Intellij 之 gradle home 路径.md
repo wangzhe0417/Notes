@@ -11,7 +11,7 @@ date: 2017-5-29 17:06:13
 Intellij IDEA 自带 gradle 包，如果想使用本地的 gradle 的话，需要自己配置 gradle 路径。如果采用的是 Homebrew 安装工具安装的 gradle 的话，
 gradle 的路径的填写正确的形式应该如下图：
 
-![](/media/15008809450399.jpg)
+![](http://oawztil0a.bkt.clouddn.com/15008809450399.jpg)
 
 <!-- more -->
 
@@ -33,5 +33,5 @@ gradle 的路径的填写正确的形式应该如下图：
 
 错误的填写形式如下：
 
-![](/media/15008809926429.jpg)
+![](http://oawztil0a.bkt.clouddn.com/15008809926429.jpg)
 
